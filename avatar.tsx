@@ -2,10 +2,10 @@ import { Reveal } from "@/components/Reveal";
 
 const TEAM = [
   { name: "Prince Rathore", role: "Founder" },
-  { name: "Aanya Mishra", role: "Programs" },
-  { name: "Samyukta Sharma", role: "Outreach" },
-  { name: "Tvisha Malhotra", role: "Operations" },
-  { name: "Shaurya Jain", role: "Partnerships" },
+  { name: "Aanya Mishra", role: "Founder" },
+  { name: "Samyukta Sharma", role: "MD" },
+  { name: "Tvisha Malhotra", role: "HR" },
+  { name: "Shaurya Jain", role: "Outreach" },
   { name: "Maira Rajput", role: "Community" },
 ];
 
