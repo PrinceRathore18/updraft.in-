@@ -1,0 +1,93 @@
+# Updraft — Premium Youth-Led NGO Website Plan
+
+A cinematic, dark-mode, editorial landing page for Updraft. Real logo integrated. Single-page long-scroll with 9 sections. Built on the existing TanStack Start + Tailwind v4 template.
+
+---
+
+## 1. Design System
+
+- **Palette (dark-first)**: near-black background `#0A0A0B`, charcoal surfaces `#111111`, deep navy `#0B1220` for depth. Foreground soft white `#F4F4F0`. Accent: muted Updraft sage green from the logo, registered as `--accent`.
+- **Typography**: Inter (body) + a distinctive display weight for editorial headlines. Tight tracking on large type. Lucide icons throughout.
+- **Motion**: scroll-reveal fade + translate, soft animated green glow in hero, hover glow borders on cards. Restrained, not excessive.
+- **CSS tokens** in `src/styles.css` mapped to Tailwind classes: `--background`, `--foreground`, `--surface`, `--surface-elevated`, `--border`, `--muted`, `--accent`, `--accent-soft`, `--accent-glow`.
+
+---
+
+## 2. Logo & Assets
+
+- Copy the uploaded logo from `user-uploads://d0df2763-5184-43fd-a757-6d00c4d62af8` to `src/assets/updraft-logo.png`.
+- Used in: Navbar (left), Footer (left), loading screen. Favicon link in `<head>`.
+
+---
+
+## 3. Page Structure (Single Route)
+
+Route: `src/routes/index.tsx`. Sticky navbar with hash links. Smooth scroll + `scroll-margin-top`.
+
+| # | Section | Key Content |
+|---|---------|-------------|
+| 1 | **Navbar** | Logo left. Links: Mission · Skills · Program · Team · Get Involved · Contact. "Volunteer" CTA right. Translucent + backdrop-blur on scroll. |
+| 2 | **Hero** | Full viewport. Eyebrow: "A Youth-Led Organization · India". H1: "Lifting youth, elevating communities." Sub: "Inculcating 21st century skills in India's youth." Two CTAs: "Confidence Building Bootcamp" → `#program`, "Volunteer" → form. Background: generated cinematic image of Indian youth, dark gradient overlay, subtle green glow, fine grain. |
+| 3 | **Mission** | Editorial two-column. Pull quote: "Education taught them to memorize. We teach them to lead." + closing mission statement. |
+| 4 | **21st Century Skills** | Responsive grid: Leadership, Communication, Confidence, Teamwork, Creativity, Critical Thinking, Digital Literacy, Emotional Intelligence. Lucide icon + title + short copy + hover glow border. |
+| 5 | **Confidence Building Bootcamp** (`#program`) | **Flagship premium editorial layout**. Oversized featured card, cinematic visuals, modern typography, highlighted outcomes, elegant spacing, subtle motion. |
+| 6 | **Team** | 6 circular monogram avatars with green ring: Prince Rathore, Aanya Mishra, Samyukta Sharma, Tvisha Malhotra, Shaurya Jain, Maira Rajput. |
+| 7 | **Get Involved** | "Pick your way in." 3 cards: Volunteer, School Partnership, Sponsor & Collaborate. |
+| 8 | **Contact** | Email, phone, Instagram. "Usually replies within 24 hours." |
+| 9 | **Footer** | Logo, explore links, Instagram icon, "India", copyright. |
+
+---
+
+## 4. Confidence Building Bootcamp — Detailed Spec
+
+**Emotional tone:** Growth, confidence, self-expression, leadership, practical learning, real transformation.
+
+**Layout:** Premium editorial oversized featured card spanning full width on desktop, with:
+- Cinematic hero visual (left or background) of online youth workshop / speaking environment
+- Title: **Confidence Building Bootcamp**
+- Key details row: 19th & 20th June 2026 · Online via Google Meet · Free · Limited to 100
+- Description paragraph aligned with Updraft vision
+- "What you'll gain" outcomes in a clean list/grid with green accent markers
+- Program structure: Day 1 = Interactive Training Session, Day 2 = Confidence Competition
+- Outcomes list: Exclusive Confidence Cheat Sheet, Certificate of Participation, Certificate of Achievement, LoR for winners, LoA for winners, 3-Month Mentorship for winners, Social Media Recognition, better public speaking/communication, leadership & self-expression, real confidence for MUNs/interviews/debates/presentations
+- CTA: **"Apply Now"** → `https://forms.gle/bmU5qMhLfNz7VA1z6`
+
+**Visual treatment:**
+- Dark surface card with subtle border glow on hover
+- Cinematic generated image of TED-style youth speaking / virtual workshop
+- Outcomes presented as clean tag-like pills or icon list
+- Generous whitespace, large type for the title, elegant hierarchy
+- Subtle entrance animation (fade-up on scroll)
+
+---
+
+## 5. Generated Imagery
+
+| Asset | Prompt Style |
+|-------|--------------|
+| Hero background | Cinematic Indian youth collaboration, desaturated, dark mood, workshop scene |
+| Program section | Cinematic online youth workshop, public speaking, TED-style virtual environment, desaturated with green accent |
+
+Saved to `src/assets/`, imported as ES modules.
+
+---
+
+## 6. Technical Details
+
+- Update `src/routes/__root.tsx` head with Updraft title, description, OG tags, favicon.
+- New components under `src/components/sections/`: `Navbar`, `Hero`, `Mission`, `Skills`, `Program`, `Team`, `GetInvolved`, `Contact`, `Footer`.
+- Shared: `SectionEyebrow`, `RevealOnScroll` (IntersectionObserver + CSS).
+- Reveal via IO hook + Tailwind keyframes. No new heavy deps.
+- `html { scroll-behavior: smooth }` + `scroll-mt-24` on anchors.
+- Mobile-first responsive.
+
+---
+
+## 7. SEO
+
+- Title: "Updraft — Lifting youth, elevating communities."
+- Description: "Updraft is a youth-led nonprofit empowering India's youth with 21st century skills regardless of background."
+- OG image: hero render.
+- Canonical `/`.
+
+Ready to build on approval.
