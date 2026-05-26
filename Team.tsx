@@ -1,7 +1,7 @@
 import { ArrowUpRight, ArrowDown } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 
-const VOLUNTEER_URL = "https://forms.gle/bmU5qMhLfNz7VA1z6";
+const VOLUNTEER_URL = "https://forms.gle/AdFdnL1QG9v7sQF58";
 
 export function Hero() {
   return (
@@ -28,7 +28,7 @@ export function Hero() {
       <div className="relative mx-auto w-full max-w-7xl px-6 pb-20 pt-32 lg:px-10 lg:pb-32">
         <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-muted-foreground animate-[fade-in_1s_ease-out_both]">
           <span className="h-px w-8 bg-accent" />
-          A Youth-Led Movement · India
+          A Youth-Led Organization · India
         </div>
 
         <h1 className="mt-8 max-w-5xl font-display text-5xl leading-[1.02] text-balance text-foreground sm:text-7xl lg:text-[8rem] animate-[fade-up_1.2s_cubic-bezier(0.22,1,0.36,1)_both]">
