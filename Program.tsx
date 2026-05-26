@@ -51,7 +51,7 @@ export function Footer() {
               className="mt-4 inline-flex items-center gap-2 text-sm text-foreground/80 transition-colors hover:text-accent"
             >
               <Instagram className="h-4 w-4" />
-              @updraft.india
+              @updraft__
             </a>
             <div className="mt-6 text-xs uppercase tracking-[0.25em] text-muted-foreground">
               Based in
