@@ -12,7 +12,7 @@ const LINKS = [
   { href: "#contact", label: "Contact" },
 ];
 
-const VOLUNTEER_URL = "https://forms.gle/bmU5qMhLfNz7VA1z6";
+const VOLUNTEER_URL = "https://forms.gle/AdFdnL1QG9v7sQF58";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
