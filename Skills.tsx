@@ -1,7 +1,7 @@
 import { ArrowUpRight, HandHeart, School, Handshake } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 
-const VOLUNTEER_URL = "https://forms.gle/bmU5qMhLfNz7VA1z6";
+const VOLUNTEER_URL = "https://forms.gle/AdFdnL1QG9v7sQF58";
 
 const WAYS = [
   {
@@ -17,15 +17,15 @@ const WAYS = [
     title: "School Partnership",
     body: "Bring Updraft programs to your school or college. We'll co-design it with you.",
     cta: "Partner with us",
-    href: "mailto:hello@updraft.org.in",
+    href: "mailto:updraft18@gmail.com",
     external: false,
   },
   {
     icon: Handshake,
     title: "Sponsor & Collaborate",
-    body: "Fund a cohort. Sponsor a region. Help an entire generation find their voice.",
+    body: "Fund a cohort. Sponsor a region. Help an entire generation find their voice. Organize with us",
     cta: "Start a conversation",
-    href: "mailto:hello@updraft.org.in",
+    href: "mailto:updraft18@gmail.com",
     external: false,
   },
 ];
