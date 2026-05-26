@@ -64,23 +64,6 @@ export function Hero() {
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </a>
         </div>
-
-        <div className="mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border sm:max-w-2xl sm:grid-cols-3">
-          {[
-            { k: "100", v: "Seats this cohort" },
-            { k: "2 days", v: "Live transformation" },
-            { k: "Free", v: "Always, for every youth" },
-          ].map((s) => (
-            <div key={s.v} className="bg-background/80 p-5 backdrop-blur">
-              <div className="font-display text-2xl text-foreground sm:text-3xl">
-                {s.k}
-              </div>
-              <div className="mt-1 text-xs uppercase tracking-wider text-muted-foreground">
-                {s.v}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
