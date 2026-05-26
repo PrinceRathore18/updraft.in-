@@ -7,6 +7,7 @@ const TEAM = [
   { name: "Tvisha Malhotra", role: "HR" },
   { name: "Shaurya Jain", role: "Outreach" },
   { name: "Maira Rajput", role: "Community" },
+  { name: "Angel Batra", role: "Design" },
 ];
 
 function initials(name: string) {

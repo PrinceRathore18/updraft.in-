@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "A youth-led movement inculcating 21st century skills in India's youth. Join the Confidence Building Bootcamp.",
+          "A youth-led organization inculcating 21st century skills in India's youth. Join the Confidence Building Bootcamp.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
