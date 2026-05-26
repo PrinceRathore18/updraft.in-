@@ -23,9 +23,9 @@ export function Contact() {
           <Reveal delay={150} className="lg:col-span-5">
             <ul className="space-y-2">
               {[
-                { icon: Mail, label: "hello@updraft.org.in", href: "mailto:hello@updraft.org.in" },
-                { icon: Phone, label: "+91 00000 00000", href: "tel:+910000000000" },
-                { icon: Instagram, label: "@updraft.india", href: "https://instagram.com/updraft.india" },
+                { icon: Mail, label: "updraft18@gmail.com", href: "mailto:updraft18@gmail.com" },
+                { icon: Phone, label: "+91 92112 44089", href: "tel:+919211244089" },
+                { icon: Instagram, label: "@updraft__", href: "https://www.instagram.com/updraft__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
               ].map(({ icon: Icon, label, href }) => (
                 <li key={label}>
                   <a
