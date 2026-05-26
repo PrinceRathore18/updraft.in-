@@ -1,50 +1,16 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Navbar } from "@/components/sections/Navbar";
-import { Hero } from "@/components/sections/Hero";
-import { Mission } from "@/components/sections/Mission";
-import { Skills } from "@/components/sections/Skills";
-import { Program } from "@/components/sections/Program";
-import { Team } from "@/components/sections/Team";
-import { GetInvolved } from "@/components/sections/GetInvolved";
-import { Contact } from "@/components/sections/Contact";
-import { Footer } from "@/components/sections/Footer";
-
-export const Route = createFileRoute("/")({
-  component: Index,
-  head: () => ({
-    meta: [
-      { title: "Updraft — Lifting youth. Elevating communities." },
-      {
-        name: "description",
-        content:
-          "Updraft is a youth-led nonprofit equipping India's next generation with 21st century skills — confidence, communication, leadership — regardless of background.",
-      },
-      { property: "og:title", content: "Updraft — Lifting youth. Elevating communities." },
-      {
-        property: "og:description",
-        content:
-          "A youth-led organization inculcating 21st century skills in India's youth. Join the Confidence Building Bootcamp.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
-});
-
-function Index() {
-  return (
-    <main className="relative min-h-screen bg-background text-foreground">
-      <Navbar />
-      <Hero />
-      <Mission />
-      <Skills />
-      <Program />
-      <Team />
-      <GetInvolved />
-      <Contact />
-      <Footer />
-    </main>
-  );
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils"
+  }
 }
