@@ -1,13 +1,11 @@
-import Hero from "../Hero";
-import Navbar from "../Navbar";
-import Contact from "../Contact";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
 
 export default function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Contact />
     </>
   );
 }
